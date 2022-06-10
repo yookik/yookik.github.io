@@ -1,0 +1,167 @@
+.registerbox {
+    width: 500px;
+    height: 420px;
+    /* background: rgb(250, 247, 247); */
+    color: rgb(1, 0, 0);
+    top: 50%;
+    left: 60%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 52px 65px 29px 92px;
+    border-radius: 20px;
+    display: flex;
+    background: transparent;
+    background-image: url(../upload/22_open.72c00877.png),
+        url(../upload/33_open.43a09438.png);
+    background-position: 0 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 15%;
+    /* position: relative; */
+    /* flex-direction: column; */
+
+}
+
+.avatar1 {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 40%;
+}
+
+.register-wrapper {
+    width: 400px;
+}
+
+.register-tab {
+    color: black;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 20px;
+}
+
+.tab-word {
+    font-size: 18px;
+
+}
+
+.messgae-wrapper {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.tel {
+    display: flex;
+    padding: 0 20px;
+    -webkit-box-align: center;
+    /*  align-items: center; 将弹性 <div> 元素的所有项目的居中对齐： */
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d9d8d8;
+    border-radius: 8px 8px 0 0;
+    height: 43px;
+    border-bottom: none;
+}
+
+.code {
+    display: flex;
+    padding: 0 20px;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 1px solid #d9d8d8;
+    border-radius: 0 0 8px 8px;
+    height: 43px;
+}
+
+.tel-left {
+    position: relative;
+}
+
+.tel-right {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+
+.tel .tel-left .tel-input {
+    width: 170px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: #212121;
+    background: transparent;
+}
+
+.tel .tel-right .line {
+    display: inline-block;
+    width: 1px;
+    height: 26px;
+    background: #d3d1d1;
+    margin-right: 24px;
+}
+
+.tel .tel-right .text {
+    font-size: 14px;
+    color: #00a1d6;
+    cursor: pointer;
+}
+
+.code input {
+    width: 170px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    color: #212121;
+    background: transparent;
+
+}
+
+.register-button {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+/* .register-button .btn {
+    background-color: rgb(240, 204, 225);
+    color: #00a1d6;
+} */
+.register-button input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #00a1d6;
+    border-radius: 20px;
+    width: 70%;
+    color: #ffffff;
+}
+
+.register-button input[type="submit"]:hover {
+    cursor: pointer;
+    background: rgb(212, 243, 181);
+    color: #040404;
+}
+
+.agree-wrapper {
+    padding-left: 50px;
+    margin-top: 20px;
+    font-size: small;
+    font-weight: 100;
+}
+
+.agree-wrapper input {
+    vertical-align: middle;
+}
+
+.agree-wrapper a {
+    text-decoration: none;
+    color: rgb(163, 226, 251);
+}

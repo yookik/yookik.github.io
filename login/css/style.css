@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: url(../upload/01.png) no-repeat; */
+    background-size: cover;
+
+    font-family: sans-serif;
+
+
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    cursor: default;
+
+
+}
+
+.avatar {
+    width: 35%;
+    height: 25%;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 30%;
+
+
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    object-fit: cover;
+
+}
+
+.loginbox {
+    width: 320px;
+    height: 420px;
+    /* background: #000; */
+    background: transparent;
+    color: #fff;
+    top: 50%;
+    left: 60%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 80px 30px;
+    border-radius: 40px;
+}
+
+.loginbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+}
+
+.loginbox input {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    /* tansparent透明的背景 */
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(239, 196, 196);
+    font-size: 14px;
+
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(231, 185, 167);
+    border-radius: 20px;
+    width: 100%;
+
+}
+
+.loginbox input[type="submit"]:hover {
+    /* cursor : 网页浏览时用户鼠标指针的样式或图形形状。
+属性值：
+default：默认光标（通常是一个箭头）
+auto：默认，浏览器设置的光标
+crosshair：光标为十字线
+pointer：光标为一只手
+move：光标为某对象可移动
+text：光标指示文本
+wait：光标指示程序正在忙（通常是一只表或者一个沙漏）*/
+    cursor: pointer;
+    background: khaki;
+    color: #fff;
+}
+
+.loginbox a {
+    display: block;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.loginbox a:hover {
+    color: rgb(231, 185, 167);
+    cursor: help;
+}
