@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,780&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     /* background: url(../upload/01.png) no-repeat; */
     background-size: cover;
 
-    font-family: sans-serif;
-
+    /* font-family: sans-serif; */
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -45,7 +47,7 @@ h1 {
     width: 320px;
     height: 420px;
     /* background: #000; */
-    background: transparent;
+    background: linear-gradient(315deg, #706e6e 5%, #a4cbf3 50%);
     color: #fff;
     top: 50%;
     left: 60%;
@@ -116,4 +118,182 @@ wait：光标指示程序正在忙（通常是一只表或者一个沙漏）*/
 .loginbox a:hover {
     color: rgb(231, 185, 167);
     cursor: help;
+}
+
+.loginbox .eye {
+    width: var(--size);
+    height: var(--size);
+    border: 2px solid var(--inputColor);
+    border-radius: calc(var(--size) / 1.5) 0;
+    transform: rotate(2deg);
+}
+
+.loginbox .eye:before,
+.eye:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.loginbox .eye:before {
+    width: 35%;
+    height: 35%;
+    background-color: var(--inputColor);
+}
+
+.loginbox .eye:after {
+    width: 65%;
+    height: 65%;
+    border: 2px solid var(--inputColor);
+    border-radius: 100%;
+}
+
+.loginbox .eye img {
+    width: 28px;
+    height: 28px;
+
+
+}
+
+.loginbox button {
+    --size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 64%;
+    right: 6.75rem;
+    border: none;
+    background-color: transparent;
+    transform: translateY(-50%);
+}
+
+.loginbox .beam {
+    position: absolute;
+    top: 50%;
+    right: 1.75rem;
+    -webkit-clip-path: polygon(100% 50%, 100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 100% 50%, 0 0, 0 100%);
+    width: 100vw;
+    height: 25vw;
+    z-index: 1;
+    mix-blend-mode: multiply;
+    transition: transform 200ms ease-out;
+    transform-origin: 100% 50%;
+    transform: translateY(-50%) rotate(var(--beamDegrees, 0));
+    pointer-events: none;
+}
+
+
+/* 手风琴区域 */
+.wrapper {
+
+    position: absolute;
+    top: 84%;
+    left: 44%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+}
+
+.wrapper .button {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    /* float: left; */
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 1);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+    width: 200px;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+
+}
+
+/* 更改手风琴图标颜色 */
+.wrapper .button:nth-child(1):hover .icon {
+    background: #4267B2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background: #55bafa;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background: #E1306C;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+    background: #6a6c70;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+    background: #ca0606;
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+    color: #fff;
+}
+
+/* 设置手风琴字体大小 */
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+
+}
+
+/* 更改文本字体颜色 */
+.wrapper .button:nth-child(1) span {
+    color: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span {
+    color: #55bafa;
+}
+
+.wrapper .button:nth-child(3) span {
+    color: #E1306C;
+}
+
+.wrapper .button:nth-child(4) span {
+    color: #6a6c70;
+}
+
+.wrapper .button:nth-child(5) span {
+    color: #ca0606;
 }
